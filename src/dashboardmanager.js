@@ -7,14 +7,14 @@ let BookList =  [
         "title": "Amogus",
         "author": "John Doe",
         "pages": "666",
-        "src": "./Books/Tutorial/TestBook.html"    
+        "src": "./Books/Tutorial/Shelf.html"    
     },
     {
-        "title": "hell (beep)",
-        "author": "the (beep)",
-        "pages": "1",
+        "title": "doctor",
+        "author": "meer",
+        "pages": "0987",
         "src": "./Books/Tutorial/TestBook.html"
-    },
+    }
 ]
 
 let AmogusBook = CloneBook.cloneNode(true);
