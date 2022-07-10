@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
   <body class=" bg-amber-900">
-    <div class="BookShelf flex">
+    <div class="BookShelf flex" id="Bookshelf1">
       <div class=" w-screen inset-x-0 bottom-0 bg-amber-600 z-50 h-5 absolute"></div>
       <div class=" w-5 absolute inset-y-0 left-0 bg-amber-600 z-50 h-screen"></div>
       <div class=" w-5 absolute inset-y-0 right-0 bg-amber-600 z-50 h-screen"></div>
@@ -25,23 +25,76 @@
           <div class=" w-6 h-28" id="Testbook"></div>
         </div>
         <div class=" bg-amber-600 h-6 w-screen top-40 flex justify-evenly"><p class=" text-white font-medium">Get started with Open Library</p></div>
-        <div class=" bg-amber-600 h-8 w-screen top-40 flex justify-evenly z-50 pt-1">
-        <a href="./books/Articles/Shelf.html"><div class=" w-auto h-8 bg-amber-400 rounded-md "><p>Articles</p></div></a>
-        <a href="./books/Children/Shelf.html"><div class=" w-auto h-8 bg-amber-400 rounded-md "><p>Children</p></div></a>
-        <a href="./books/Cookbooks/Shelf.html"><div class=" w-auto h-8 bg-amber-400 rounded-md "><p>Cookbooks</p></div></a>
-        <a href="./books/Fiction/Shelf.html"><div class=" w-auto h-8 bg-amber-400 rounded-md "><p>Fiction</p></div></a>
-        <a href="./books/Horror/Shelf.html"><div class=" w-auto h-8 bg-amber-400 rounded-md "><p>Horror</p></div></a>
-        <a href="./books/jokes/Shelf.html"><div class=" w-auto h-8 bg-amber-400 rounded-md "><p>Jokes</p></div></a>
-        <a href="./books/Literature/Shelf.html"><div class=" w-auto h-8 bg-amber-400 rounded-md "><p>Literature</p></div></a>
-        <a href="./books/Mystery/Shelf.html"><div class=" w-auto h-8 bg-amber-400 rounded-md "><p>Mystery</p></div></a>
-        <a href="./books/Poetry/Shelf.html"><div class=" w-auto h-8 bg-amber-400 rounded-md "><p>Poetry</p></div></a>
-        <a href="./books/Psycology/Shelf.html"><div class=" w-auto h-8 bg-amber-400 rounded-md "><p>Psycology</p></div></a>
-        <a href="./books/Sci-Fi/Shelf.html"><div class=" w-auto h-8 bg-amber-400 rounded-md "><p>Sci-Fi</p></div></a>
-        <a href="./books/Tutorial/Shelf.html"><div class=" w-auto h-8 bg-amber-400 rounded-md "><p>Tutorial</p></div></a>
-
+        <div class=" bg-amber-600 h-8 w-screen top-40 flex flex-col-reverse z-50 pt-1 pl-4">
+        <div id="Dropdown" class=" gap-y-3">
+          <a href="./books/Articles/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Articles</p></div></a>
+          <a href="./books/Children/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Children</p></div></a>
+          <a href="./books/Cookbooks/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Cookbooks</p></div></a>
+          <a href="./books/Fiction/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Fiction</p></div></a>
+          <a href="./books/Horror/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Horror</p></div></a>
+          <a href="./books/jokes/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Jokes</p></div></a>
+          <a href="./books/Literature/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Literature</p></div></a>
+          <a href="./books/Mystery/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Mystery</p></div></a>
+          <a href="./books/Poetry/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Poetry</p></div></a>
+          <a href="./books/Psycology/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Psycology</p></div></a>
+          <a href="./books/Sci-Fi/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Sci-Fi</p></div></a>
+          <a href="./books/Tutorial/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Tutorial</p></div></a>
+          <a href="./books/Tutorial/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center"></p></div></a>
+        </div>
+        <button id="dropdownbtn" class=" absolute w-28 h-8 bg-white rounded-md "><p class=" text-center">Go to 📚</p></button>
+        <div class="flex flex-row justify-center gap-x-10">
+          <button id="previous" class=" w-16 h-8 bg-white rounded-md "><p class=" text-center">⬅️</p></button>
+          <p class=" text-lg text-white" id="currshelf">Shelf 1</p>
+          <button id="next" class=" w-16 h-8 bg-white rounded-md "><p class=" text-center">➡️</p></button>
+        </div>
       </div>
     </div>
     </div>
+<!-- Bookshelf2 -->
+<div class=" " id="Bookshelf2">
+  <div class=" w-screen inset-x-0 bottom-0 bg-amber-600 z-50 h-5 absolute"></div>
+  <div class=" w-5 absolute inset-y-0 left-0 bg-amber-600 z-50 h-screen"></div>
+  <div class=" w-5 absolute inset-y-0 right-0 bg-amber-600 z-50 h-screen"></div>
+  <div class=" w-screen inset-x-0 top-0 bg-amber-600 z-50 h-5 absolute"></div>
+  <div class=" flex flex-col">
+    <div class=" flex flex-row pt-8" id="Shelf4">
+      <div class=" w-5 h-28" id="Testbook"></div>
+    </div>
+    <div class=" bg-amber-600 h-6 w-screen top-40 flex justify-evenly"><p class=" text-white font-medium">Favourites</p></div>
+    <div class=" flex flex-row pt-8 gap-x-1" id="Shelf5">
+      <a href="" id="TestBook" class=" flex"><div class=" w-16 h-auto bg-black flex flex-col"><p class=" text-sm text-center w-16 text-white" id="Testbookname"></p> <p class=" text-white w-16 text-center text-xs"></p></div></a>
+    </div>
+    <div class=" bg-amber-600 h-6 w-screen top-40 flex justify-evenly"><p class=" text-white font-medium">Recommended books</p></div>
+    <div class=" flex flex-row pt-8 gap-x-1" id="Shelf6">
+      <div class=" w-6 h-28" id="Testbook"></div>
+    </div>
+    <div class=" bg-amber-600 h-6 w-screen top-40 flex justify-evenly"><p class=" text-white font-medium">Get started with Open Library</p></div>
+    <div class=" bg-amber-600 h-8 w-screen top-40 flex flex-col-reverse z-50 pt-1 pl-4">
+    <div id="Dropdown" class=" gap-y-3">
+      <a href="./books/Articles/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Articles</p></div></a>
+      <a href="./books/Children/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Children</p></div></a>
+      <a href="./books/Cookbooks/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Cookbooks</p></div></a>
+      <a href="./books/Fiction/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Fiction</p></div></a>
+      <a href="./books/Horror/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Horror</p></div></a>
+      <a href="./books/jokes/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Jokes</p></div></a>
+      <a href="./books/Literature/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Literature</p></div></a>
+      <a href="./books/Mystery/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Mystery</p></div></a>
+      <a href="./books/Poetry/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Poetry</p></div></a>
+      <a href="./books/Psycology/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Psycology</p></div></a>
+      <a href="./books/Sci-Fi/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Sci-Fi</p></div></a>
+      <a href="./books/Tutorial/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Tutorial</p></div></a>
+      <a href="./books/Tutorial/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center"></p></div></a>
+    </div>
+    <button id="dropdownbtn" class=" absolute w-28 h-8 bg-white rounded-md "><p class=" text-center">Go to 📚</p></button>
+    <div class="flex flex-row justify-center gap-x-10">
+      <button id="previous" class=" w-16 h-8 bg-white rounded-md "><p class=" text-center">⬅️</p></button>
+      <p class=" text-lg text-white" id="currshelf">Shelf 2</p>
+      <button id="next" class=" w-16 h-8 bg-white rounded-md "><p class=" text-center">➡️</p></button>
+    </div>
+  </div>
+</div>
+</div>
   </body>
   <script src="./dashboardmanager.js"></script>
+  <script src="./universalcontroller.js"></script>
 </html>
