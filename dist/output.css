@@ -596,10 +596,6 @@ video {
   z-index: 50;
 }
 
-.block {
-  display: block;
-}
-
 .flex {
   display: flex;
 }
@@ -648,13 +644,8 @@ video {
   width: 7rem;
 }
 
-.w-7 {
-  width: 1.75rem;
-}
-
-.rotate-90 {
-  --tw-rotate: 90deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.cursor-not-allowed {
+  cursor: not-allowed;
 }
 
 .flex-row {
@@ -732,12 +723,12 @@ video {
   padding-left: 1rem;
 }
 
-.pl-7 {
-  padding-left: 1.75rem;
-}
-
 .text-center {
   text-align: center;
+}
+
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .text-sm {
