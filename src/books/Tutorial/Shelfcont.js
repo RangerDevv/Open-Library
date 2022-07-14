@@ -8,7 +8,7 @@ let BookList =  [
         "title": "About Open Library",
         "author": "John Doe",
         "pages": "666",
-        "src": "./Books/Tutorial/TestBook.html"    
+        "src": "./Books/About_Open_Library/Bookinfo.html",   
     },
     {
         "title": "Another Tutorial",
