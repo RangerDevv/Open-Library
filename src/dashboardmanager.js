@@ -25,6 +25,8 @@ AmogusBook.firstChild.lastChild.innerText = BookList[0].author;
 
 let Newbook = CloneBook.cloneNode(true);
 Newbook.setAttribute("href", BookList[1].src);
-Shelf2.appendChild(Newbook);
+Shelf3.appendChild(Newbook);
 Newbook.firstChild.firstChild.innerText = BookList[1].title;
 Newbook.firstChild.lastChild.innerText = BookList[1].author;
+Newbook.firstChild.classList.remove("h-28");
+Newbook.firstChild.classList.add("h-32");

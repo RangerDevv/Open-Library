@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="../../../../index.css" />
+    <link rel="stylesheet" href="../../../../../dist/output.css" />
+</head>
+<body class=" bg-white" id="body">
+<div id="navbar" class="flex flex-row bg-slate-700 w-screen h-10 justify-evenly pt-1">
+    <a href="./Bookinfo.html" class=" text-white w-16 text-center rounded-lg h-8 bg-red-600">Back</a>
+    <div class=" flex flex-row gap-x-2">
+    <button class=" w-28 h-8 bg-black text-white text-center" id="dark">DARK</button>
+    <button class=" w-28 h-8 bg-white text-black text-center" id="light">LIGHT</button>
+    </div>
+</div>
+</body>
+<script>
+    let dark = document.getElementById("dark");
+    let light = document.getElementById("light");
+    window.onload = function() {
+        // make the window fullscreen
+        window.moveTo(0, 0);
+        window.resizeTo(screen.width, screen.height);
+    };
+    dark.onclick = function() {
+        document.body.classList.add("bg-black");
+        document.body.classList.remove("bg-white");
+    };
+    light.onclick = function() {
+        document.body.classList.add("bg-white");
+        document.body.classList.remove("bg-black");
+    };
+</script>
+</html>
