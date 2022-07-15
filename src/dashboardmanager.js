@@ -28,5 +28,5 @@ Newbook.setAttribute("href", BookList[1].src);
 Shelf3.appendChild(Newbook);
 Newbook.firstChild.firstChild.innerText = BookList[1].title;
 Newbook.firstChild.lastChild.innerText = BookList[1].author;
-Newbook.firstChild.classList.remove("h-28");
-Newbook.firstChild.classList.add("h-32");
+// Newbook.firstChild.classList.remove("h-28");
+// Newbook.firstChild.classList.add("h-32");
