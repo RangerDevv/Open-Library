@@ -27,28 +27,3 @@ if (dropdownbtn) {
         }
     });
 }
-
-previous.addEventListener("click", function () {
-    if (currentshelf == 1) {
-        console.log("You are on the first shelf");
-    }
-     else if (currentshelf == 2) {
-        Bookshelf1.style.display = "block";
-        Bookshelf2.style.display = "none";
-        currentshelf = 1;
-        current.innerText = "Current Shelf: 1";
-    }
-});
-
-next.addEventListener("click", function () {
-    if (currentshelf == 1) {
-        Bookshelf1.style.display = "none";
-        Bookshelf2.style.display = "block";
-        currentshelf = 2;
-        current.innerText = "Shelf 2";
-    }
-    else if (currentshelf == 2) {
-        console.log("You are on the last shelf");
-        current.innerText = "Shelf 2";
-    }
-});
