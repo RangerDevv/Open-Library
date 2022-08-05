@@ -1,12 +1,17 @@
 let SongList = [
     {
-        "name": "SFRecords - Summer Lofi ",
+        "name": "danyvin - 5 AM ",
         "src": "../../../../assets/music/tunetank.com_3743_5-am_by_danyvin.mp3",
         "volume": 0.5
     },
     {
         "name": "SFRecords - Summer Lofi ",
         "src": "../../../../assets/music/tunetank.com_4043_summer-lofi_by_sfrecords.mp3",
+        "volume": 0.5
+    },
+    {
+        "name": "99Instrumentals - Coffeehouse ",
+        "src": "../../../../assets/music/tunetank.com_5075_coffeehouse_by_99instrumentals.mp3",
         "volume": 0.5
     }
 ];
@@ -20,6 +25,7 @@ let Next = document.getElementById("Next");
 let Volume = document.getElementById("Volume");
 let VolumeSlider = document.getElementById("VolumeSlider");
 let playing = false;
+let songname = document.getElementById("songname");
 
 playButton.onclick =  function PlayMusic() {
     if (playing==false) {
@@ -65,3 +71,8 @@ Next.onclick = function NextSong() {
     audio.volume = SongList[currentSong].volume;
     audio.play();
 }
+
+setInterval(function() {
+    songname.innerText = SongList[currentSong].name;
+}
+, 1000);

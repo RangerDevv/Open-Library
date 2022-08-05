@@ -737,6 +737,10 @@ video {
        column-gap: 1.5rem;
 }
 
+.gap-y-8 {
+  row-gap: 2rem;
+}
+
 .whitespace-pre-line {
   white-space: pre-line;
 }
