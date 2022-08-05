@@ -13,19 +13,32 @@
     <button class=" w-28 h-8 bg-slate-800 text-white text-center" id="Themebtn">DARK</button>
     </div>
     <button class=" w-28 h-8 bg-slate-800 text-white text-center" id="Musicbtn">🎶 MUSIC</button>
-    <div id="Card" class=" bg-slate-900 z-50 w-96 h-96 hidden">
-        <header class=" text-white text-center">MUSIC</header>
+    <div id="Card" class=" bg-slate-700 z-50 w-96 h-96 hidden">
+        <div class="flex flex-row justify-evenly">
+        <header class=" text-white text-center text-lg">MUSIC</header>
+        <button class="text-white text-center w-8 h-8 rounded-2xl mt-1 bg-red-600" id="Closebtn">X</button>
+
+        </div>
         <div class="flex flex-col" id="Musicholder">
             <div class="text-white">
-                <img></img>
+                <div class=" flex justify-center">
+                    <img src="../../../../assets/images/Image1.svg" class=""></img>
+                </div>
                 <p class=" text-center text-lg" id="songname">Test Song</p>
-                <div class="flex justify-center gap-x-6">
+                <div class="flex justify-center gap-x-6 pt-4">
                     <button class= "text-white text-center" id="Previous"><img src="../../../../assets/images/Previous.svg"></button>
                     <button class= "text-white text-center" id="Playpause"><img src="../../../../assets/images/Play.svg"></button>
                     <button class= "text-white text-center" id="Next"><img src="../../../../assets/images/Next.svg"></button>
                 </div>
+                <div class=" flex justify-center flex-row pt-4">
+                    <p>🔈</p>
+                <input type="range" class="w-64" id="Volume" min="0" max="100" value="50">
+                    <p>🔉</p>
+                </div>
+                <p class=" text-xs pl-4 pt-14 text-white">Music from Tunetank.com</p>
             </div>
         </div>
+
     </div>
 </div>
 
@@ -80,6 +93,9 @@ As shown above dhe purfekt inglix alfabet stays consistent with the pronunciatio
         window.resizeTo(screen.width, screen.height);
     };
     document.getElementById('Musicbtn').addEventListener('click', function() {
+        document.getElementById('Card').classList.toggle('hidden');
+    });
+    document.getElementById('Closebtn').addEventListener('click', function() {
         document.getElementById('Card').classList.toggle('hidden');
     });
 </script>
