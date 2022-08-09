@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.1.4 | MIT License | https://tailwindcss.com
+! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -355,13 +355,6 @@ input::-moz-placeholder, textarea::-moz-placeholder {
   /* 2 */
 }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  opacity: 1;
-  /* 1 */
-  color: #9ca3af;
-  /* 2 */
-}
-
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
@@ -601,10 +594,6 @@ video {
   z-index: 50;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -657,14 +646,6 @@ video {
   height: 24rem;
 }
 
-.h-72 {
-  height: 18rem;
-}
-
-.h-80 {
-  height: 20rem;
-}
-
 .w-screen {
   width: 100vw;
 }
@@ -699,14 +680,6 @@ video {
 
 .w-8 {
   width: 2rem;
-}
-
-.w-full {
-  width: 100%;
-}
-
-.w-80 {
-  width: 20rem;
 }
 
 .w-64 {
@@ -879,18 +852,6 @@ video {
 
 .pt-3 {
   padding-top: 0.75rem;
-}
-
-.pt-12 {
-  padding-top: 3rem;
-}
-
-.pt-16 {
-  padding-top: 4rem;
-}
-
-.pt-24 {
-  padding-top: 6rem;
 }
 
 .pt-14 {
