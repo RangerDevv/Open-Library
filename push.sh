@@ -1,6 +1,6 @@
 #user/bin/bash
 echo "Updating..."
 git add .
-git commit -m "updated template and added some changes and bug fixes"
+git commit -m "Added the first book."
 git push
 echo "Done!"
