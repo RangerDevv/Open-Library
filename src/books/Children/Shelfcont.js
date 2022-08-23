@@ -24,6 +24,6 @@ AmericanFairyTale.firstChild.lastChild.innerText = BookList[0].author;
 
 let ThePheonixAndTheCarpet = CloneBook.cloneNode(true);
 ThePheonixAndTheCarpet.setAttribute("href", BookList[1].src);
-Shelf3.appendChild(ThePheonixAndTheCarpet);
+Shelf1.appendChild(ThePheonixAndTheCarpet);
 ThePheonixAndTheCarpet.firstChild.firstChild.innerText = BookList[1].title;
 ThePheonixAndTheCarpet.firstChild.lastChild.innerText = BookList[1].author;
