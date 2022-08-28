@@ -746,12 +746,12 @@ video {
   justify-content: space-evenly;
 }
 
-.gap-5 {
-  gap: 1.25rem;
-}
-
 .gap-1 {
   gap: 0.25rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-x-1 {
@@ -804,10 +804,6 @@ video {
 
 .border {
   border-width: 1px;
-}
-
-.border-l {
-  border-left-width: 1px;
 }
 
 .bg-amber-900 {
