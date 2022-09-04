@@ -17,17 +17,11 @@ if (dropdownbtn) {
         if (showing) {
             dropdown.style.display = "none";
             showing = false;
-            dropdownbtn.firstChild.innerText = "Go to 📚";
-            previous.style.display = "block";
-            next.style.display = "block";
-            current.style.display = "block";
+            dropdownbtn.firstChild.innerText = "📖Books ↓";
         } else {
             dropdown.style.display = "block";
             showing = true;
-            dropdownbtn.firstChild.innerText = "Close ❌";
-            previous.style.display = "none";
-            next.style.display = "none";
-            current.style.display = "none";
+            dropdownbtn.firstChild.innerText = "📖Books ↑";
         }
     });
 }
