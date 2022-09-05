@@ -8,10 +8,41 @@
   </head>
   <body class=" bg-amber-900">
     <div class="BookShelf flex" id="Bookshelf1">
-      <div class=" w-screen inset-x-0 bottom-0 bg-amber-600 z-50 h-7 absolute"></div>
-      <div class=" w-5 absolute inset-y-0 left-0 bg-amber-600 z-50 h-screen"></div>
-      <div class=" w-5 absolute inset-y-0 right-0 bg-amber-600 z-50 h-screen"></div>
-      <div class=" w-screen inset-x-0 top-0 bg-amber-600 z-50 h-5 absolute"><p class=" font-serif text-white text-center font-medium">Literature</p></div>
+      <div class=" w-screen inset-x-0 bottom-0 bg-amber-600 z-30 h-7 absolute"></div>
+      <div class=" w-5 absolute inset-y-0 left-0 bg-amber-600 z-30 h-screen"></div>
+      <div class=" w-screen absolute inset-y-0 left-0 bg-black z-40 h-screen opacity-50" id="Shadow"></div>
+      <div class=" w-80 absolute inset-y-0 left-0 bg-amber-900 z-50 flex flex-col h-screen" id="Menu">
+        <button class="closeMenu"><p class=" text-left text-white text-2xl" id="CloseMenu">X</p></button>
+        <p class=" text-xl text-center text-white font-mono">DASHBOARD</p>
+        
+        <div class=" flex flex-col">
+          <button id="dropdownbtn" class=" w-28 h-8"><p class=" text-center text-lg text-white">📖Books ↓</p></button>
+          <div class=" flex flex-col" id="Dropdown">
+          <a href="../Articles/Shelf.html"><div class=" w-28 h-7 text-md text-white rounded-md pl-10 "><p class=" text-left">Articles</p></div></a>
+          <a href="../Children/Shelf.html"><div class=" w-28 h-7 text-md text-white rounded-md pl-10 "><p class=" text-left">Children</p></div></a>
+          <a href="../Tech/Shelf.html"><div class=" w-28 h-7 text-md text-white rounded-md pl-10 "><p class=" text-left">Tech</p></div></a>
+          <a href="../Fiction/Shelf.html"><div class=" w-28 h-7 text-md text-white rounded-md pl-10 "><p class=" text-left">Fiction</p></div></a>
+          <a href="../Horror/Shelf.html"><div class=" w-28 h-7 text-md text-white rounded-md pl-10 "><p class=" text-left">Horror</p></div></a>
+          <a href="../Jokes/Shelf.html"><div class=" w-28 h-7 text-md text-white rounded-md pl-10 "><p class=" text-left">Jokes</p></div></a>
+          <a href="../Literature/Shelf.html"><div class=" w-28 h-7 text-md text-white rounded-md pl-10 "><p class=" text-left">Literature</p></div></a>
+          <a href="../Mystery/Shelf.html"><div class=" w-28 h-7 text-md text-white rounded-md pl-10 "><p class=" text-left">Mystery</p></div></a>
+          <a href="../Poetry/Shelf.html"><div class=" w-28 h-7 text-md text-white rounded-md pl-10 "><p class=" text-left">Poetry</p></div></a>
+          <a href="../Psycology/Shelf.html"><div class=" w-28 h-7 text-md text-white rounded-md pl-10 "><p class=" text-left">Psychology</p></div></a>
+          <a href="../Sci-Fi/Shelf.html"><div class=" w-28 h-7 text-md text-white rounded-md pl-10 "><p class=" text-left">Sci-Fi</p></div></a>
+          <a href="../Tutorial/Shelf.html"><div class=" w-28 h-7 text-md text-white rounded-md pl-10 "><p class=" text-left">Tutorial</p></div></a>
+          <a href="../../index.html"><div class=" w-28 h-7 text-md text-white rounded-md pl-10 "><p class=" text-left">Dashboard</p></div></a>
+        </div>
+        </div>
+        <div class=" flex flex-col">
+        <button id="Shop" class=" w-36 h-8 pl-3 "><p class=" text-left text-lg text-white">💼Shop</p></button>
+        <button id="Setting" class=" w-36 h-8 pl-3 "><p class=" text-left text-lg text-white">⚙️Setting</p></button>
+        <button id="Leave" class=" w-36 h-8 pl-3 "><p class=" text-left text-lg text-red-500">🚀Leave</p></button>
+        </div>
+      </div>
+      <div class=" w-5 absolute inset-y-0 right-0 bg-amber-600 z-30 h-screen"></div>
+      <div class=" w-screen inset-x-0 top-0 bg-amber-600 z-30 h-5 flex-row absolute">
+        <button class=" w-4 h-5 text-white text-2xl" id="OpenMenu">⫸</button>
+        </div>
       <div class=" flex flex-col">
         <div class=" flex flex-row pt-5" id="Shelf4">
           <div class=" w-5 h-32" id=""></div>
@@ -25,7 +56,7 @@
           <div class=" w-6 h-32" id=""></div>
         </div>
         <div class=" bg-amber-600 h-6 w-screen top-40 flex justify-evenly"><p class=" text-white font-medium">Shelf 3</p></div>
-        <div class=" bg-amber-600 h-8 w-screen top-40 flex flex-col-reverse z-50 pt-1 pl-4">
+        <div class=" bg-amber-600 h-8 w-screen top-40 flex flex-col-reverse z-30 pt-1 pl-4">
         <div id="Dropdown" class=" gap-y-3">
           <a href="../Articles/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Articles</p></div></a>
           <a href="../Children/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Children</p></div></a>
@@ -41,7 +72,7 @@
           <a href="../../index.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center">Dashboard</p></div></a>
           <a href="./books/Tutorial/Shelf.html"><div class=" w-28 h-8 bg-amber-400 rounded-md "><p class=" text-center"></p></div></a>
         </div>
-        <button id="dropdownbtn" class=" absolute w-28 h-8 bg-white rounded-md "><p class=" text-center">Go to 📚</p></button>
+ 
         <div class="flex flex-row justify-center gap-x-10">
           <a href="./Shelf.html"><button id="previous" class=" w-16 h-8 bg-white rounded-md "><p class=" text-center">⬅️</p></button></a>
           <p class=" text-lg text-white" id="currshelf">Bookshelf 2</p>
@@ -53,4 +84,5 @@
   </body>
   <script src="./Shelfcont.js"></script>
   <script src="../../universalcontroller.js"></script>
+  <script src="../../scripts/Menumanager.js"></script>
 </html>
